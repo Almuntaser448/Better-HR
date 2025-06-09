@@ -1,0 +1,53 @@
+{
+  "base_folder": "C:/Users/alm1b/Desktop/New folder",
+  "cv_list": [],
+  "current_index": -1,
+  "undo_stack": [
+    {
+      "src": "C:/Users/alm1b/Desktop/New folder\\CV Almuntaser BASHItI (1) (1).pdf",
+      "dest": "C:/Users/alm1b/Desktop/New folder\\HoldForReview\\CV Almuntaser BASHItI (1) (1)_1.pdf",
+      "type": "hold",
+      "filename": "CV Almuntaser BASHItI (1) (1).pdf",
+      "position": 0
+    },
+    {
+      "src": "C:/Users/alm1b/Desktop/New folder\\CV Almuntaser BASHItI (1).pdf",
+      "dest": "C:/Users/alm1b/Desktop/New folder\\HoldForReview\\CV Almuntaser BASHItI (1).pdf",
+      "type": "hold",
+      "filename": "CV Almuntaser BASHItI (1).pdf",
+      "position": 0
+    },
+    {
+      "src": "C:/Users/alm1b/Desktop/New folder\\CV Almuntaser BASHItI RATP.pdf",
+      "dest": "C:/Users/alm1b/Desktop/New folder\\HoldForReview\\CV Almuntaser BASHItI RATP.pdf",
+      "type": "hold",
+      "filename": "CV Almuntaser BASHItI RATP.pdf",
+      "position": 0
+    },
+    {
+      "src": "C:/Users/alm1b/Desktop/New folder\\CV Almuntaser BASHItI.pdf",
+      "dest": "C:/Users/alm1b/Desktop/New folder\\Rejected\\UnsatisfactoryExperience\\CV Almuntaser BASHItI.pdf",
+      "type": "reject",
+      "reason": "2",
+      "filename": "CV Almuntaser BASHItI.pdf",
+      "position": 0
+    },
+    {
+      "src": "C:/Users/alm1b/Desktop/New folder\\CV Almuntaser BASHItIdep.pdf",
+      "dest": "C:/Users/alm1b/Desktop/New folder\\Rejected\\Other\\CV Almuntaser BASHItIdep.pdf",
+      "type": "reject",
+      "reason": "3",
+      "filename": "CV Almuntaser BASHItIdep.pdf",
+      "position": 0
+    },
+    {
+      "src": "C:/Users/alm1b/Desktop/New folder\\edf.pdf",
+      "dest": "C:/Users/alm1b/Desktop/New folder\\HoldForReview\\edf.pdf",
+      "type": "hold",
+      "filename": "edf.pdf",
+      "position": 0
+    }
+  ],
+  "cand_email_map": {},
+  "viewer_zoom": 0.5
+}
