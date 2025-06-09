@@ -132,16 +132,6 @@ We welcome contributions! Here's how to help:
 3. Improve documentation and translations
 4. Share your success stories using Better HR
 
-## License
-
-Better HR is released under the MIT License. See [LICENSE](LICENSE) for details.
-
-## Support
-
-For support or questions:
-- Open an issue on GitHub
-- Join our community forum (coming soon)
-- Email: support@betterhr.org
 
 ---
 
