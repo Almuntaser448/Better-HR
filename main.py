@@ -175,7 +175,7 @@ class HelpTab(QWidget):
         title_font.setBold(True)
         title_font.setPointSize(18)
         title.setFont(title_font)
-        title.setStyleSheet("color: #2c3e50; margin-bottom: 20px;")
+        title.setStyleSheet("color: white; margin-bottom: 20px;")
         scroll_layout.addWidget(title)
         
         # Introduction
@@ -205,7 +205,7 @@ class HelpTab(QWidget):
         keys_layout.setHorizontalSpacing(20)
         
         # Navigation
-        keys_layout.addRow(QLabel("<span style='font-size: 11pt; font-weight: bold; color: #2c3e50;'>Navigation</span>"), QLabel(""))
+        keys_layout.addRow(QLabel("<span style='font-size: 11pt; font-weight: bold; color: white;'>Navigation</span>"), QLabel(""))
         keys_layout.addRow(QLabel("<span style='font-size: 11pt;'>→ Right Arrow</span>"), QLabel("<span style='font-size: 11pt;'>Next page</span>"))
         keys_layout.addRow(QLabel("<span style='font-size: 11pt;'>← Left Arrow</span>"), QLabel("<span style='font-size: 11pt;'>Previous page</span>"))
         keys_layout.addRow(QLabel("<span style='font-size: 11pt;'>1, 2, 3</span>"), QLabel("<span style='font-size: 11pt;'>Reject with reason</span>"))
@@ -215,7 +215,7 @@ class HelpTab(QWidget):
         keys_layout.addRow(QLabel("<span style='font-size: 11pt;'>Esc</span>"), QLabel("<span style='font-size: 11pt;'>Return to main view</span>"))
         
         # Zoom Controls
-        keys_layout.addRow(QLabel("<span style='font-size: 11pt; font-weight: bold; color: #2c3e50;'>Zoom Controls</span>"), QLabel(""))
+        keys_layout.addRow(QLabel("<span style='font-size: 11pt; font-weight: bold; color: white;'>Zoom Controls</span>"), QLabel(""))
         keys_layout.addRow(QLabel("<span style='font-size: 11pt;'>Ctrl++</span>"), QLabel("<span style='font-size: 11pt;'>Zoom in</span>"))
         keys_layout.addRow(QLabel("<span style='font-size: 11pt;'>Ctrl+-</span>"), QLabel("<span style='font-size: 11pt;'>Zoom out</span>"))
         keys_layout.addRow(QLabel("<span style='font-size: 11pt;'>Ctrl+0</span>"), QLabel("<span style='font-size: 11pt;'>Reset zoom</span>"))
@@ -302,7 +302,7 @@ class MainWindow(QMainWindow):
         self.statusBar().showMessage('Ready')
         self.setStyleSheet("""
             QMainWindow {
-                background-color: #f5f7fa;
+                background-color: grey;
             }
             QTabWidget::pane {
                 border: none;
@@ -407,7 +407,7 @@ class MainWindow(QMainWindow):
         vl.setContentsMargins(10, 10, 10, 10)
         
         # Count label
-        self.count_lbl = QLabel('0/0')
+        self.count_lbl = QLabel('0')
         self.count_lbl.setAlignment(Qt.AlignCenter)
         self.count_lbl.setStyleSheet("""
             font-size: 14px; 
@@ -467,7 +467,7 @@ class MainWindow(QMainWindow):
         tb.setMovable(False)
         tb.setStyleSheet("""
             QToolBar {
-                background: #e9ecef;
+                background: black;
                 border-bottom: 1px solid #dee2e6;
                 padding: 5px;
             }
@@ -533,14 +533,14 @@ class MainWindow(QMainWindow):
         """Update the UI to reflect current state"""
         if not self.cv_list or self.current_index < 0 or self.current_index >= len(self.cv_list):
             self.viewer.setText("No CVs loaded")
-            self.count_lbl.setText('0/0')
+            self.count_lbl.setText('0')
             self.statusBar().showMessage('No CVs loaded')
             return
             
         try:
             p = self.cv_list[self.current_index]
             self.viewer.load_pdf(p)
-            self.count_lbl.setText(f"{self.current_index+1}/{len(self.cv_list)}")
+            self.count_lbl.setText(f"{len(self.cv_list)}")
             
             # Get candidate email if available
             name = os.path.splitext(os.path.basename(p))[0]
