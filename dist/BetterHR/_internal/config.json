@@ -1,0 +1,11 @@
+{
+  "reason_map": {
+    "1": "UnsatisfactoryEducation",
+    "2": "UnsatisfactoryExperience",
+    "3": "Other"
+  },
+  "hold_folder": "HoldForReview",
+  "email_map": {},
+  "max_undo": 100,
+  "default_zoom": 1.5
+}
