@@ -28,8 +28,8 @@ Traditional HR processes often leave candidates in the dark with generic rejecti
 ## Installation
 
 ### Prerequisites
-- Python 3.7+
-- PySide2
+- Python 3.11+
+- PySide6
 - PyMuPDF (fitz)
 
 ### Installation Steps
